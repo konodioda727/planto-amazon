@@ -7,12 +7,12 @@
 <template>
   <div class="com-container">
     <div class="title" :style="comStyle">
-      <span>{{ "▎ " + showTitle }}</span>
-      <span
+      <span style="cursor: pointer">{{ "▎ " + showTitle }}</span>
+      <!-- <span
         class="iconfont icon-arrow-down title-icon"
         :style="comStyle"
         @click="showChoice = !showChoice"
-      ></span>
+      ></span> -->
       <div class="select-con" v-show="showChoice" :style="marginStyle">
         <div
           class="select-item"
