@@ -85,7 +85,7 @@ transform-style: preserve-3d;
 }
 
 &::before {
-  background: rgb(93, 93, 159);
+  background: #30539D;
   top: 100%;
   animation: white-move @ani-duration infinite;
 }

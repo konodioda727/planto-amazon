@@ -1,7 +1,7 @@
 <template>
     <div class="home-page">
         <vue-particles
-                color="#2E16A8"
+                color="#30539D"
                 :particleOpacity="0.7"
                 :particlesNumber="60"
                 shapeType="circle"
@@ -64,6 +64,7 @@ import Loading from '../components/Loading.vue'
     },
     methods: {
         async hoverPage() {
+            this.hoverShow = true
             var config = {
                 method: 'post',
                 url: 'http://118.31.54.166:8182/api/x/e',
@@ -84,7 +85,6 @@ import Loading from '../components/Loading.vue'
                     let response = 'render\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n22\n44\n55\n66\n67567\n8\n\n7k\n7\n'
                     return response.split('\n')
             });
-            this.hoverShow = true
             setTimeout(() => {
                 this.LoadingShow = false;
             }, 4000);
@@ -180,7 +180,7 @@ import Loading from '../components/Loading.vue'
     .button{
         // animation: appear .4s ease-in-out forwards;
         margin-top: 30px;
-        color: #2E16A8;
+        color: #30539D;
         cursor: pointer;
         background-color: #fff;
         width: 80px;
@@ -199,19 +199,19 @@ import Loading from '../components/Loading.vue'
     @keyframes color {
         0% {
             opacity: 1;
-            color: #2E16A8;
+            color: #30539D;
             background-color: #fff;
         }
         100% {
             opacity: 1;
             color: #fff;
-            background-color: #2E16A8;
+            background-color: #30539D;
         }
     }
     @keyframes colorReverse {
         0% {
             color: #fff;
-            background-color: #2E16A8;
+            background-color: #30539D;
         }
         100% {
             color: #fff;
@@ -238,20 +238,20 @@ import Loading from '../components/Loading.vue'
             flex-direction: column;
             align-items: center;
             align-content: center;
-            margin-top: 30px;
+            margin-top: 60px;
             
             .logo {
                 width: 400px;
-                height: 300px;
-                background: url('../assets/logo6.png') no-repeat;
-                background-size: 400px,400px;
+                height: 170px;
+                background: url('../assets/logof.png') no-repeat;
+                background-size: 400px,200px;
                 // background: url('../../public/static/praticales.json');
             }
             .name {
                 margin-top: 0;
                 font-size: 40px;
                 line-height: 40px;
-                color: #2E16A8;
+                color: #30539D;
                 background-color: #fff;
             }
             textarea {
@@ -263,8 +263,8 @@ import Loading from '../components/Loading.vue'
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2);
                 font-size: 16px;
                 padding: 10px;
-                width: 400px;
-                height: 100px;
+                width: 600px;
+                height: 200px;
                 resize: none;
             }
             
